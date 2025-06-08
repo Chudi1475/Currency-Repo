@@ -14,6 +14,10 @@ cop_leftover = float(input('What do you have left in Colombian pesos? '))
 pen_leftover = float(input('What do you have left in Peruvian soles? '))
 brl_leftover = float(input('What do you have left in Brazilian reais? '))
 
+# Sum all the leftover currency
+
+total_usd = usd_from_cop + usd_from_pen + usd_from_brl
+
 
 
 
