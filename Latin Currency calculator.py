@@ -18,6 +18,10 @@ brl_leftover = float(input('What do you have left in Brazilian reais? '))
 
 total_usd = usd_from_cop + usd_from_pen + usd_from_brl
 
+#Print the results
+
+print(f'$ {total_usd:.2f}')
+
 
 
 
