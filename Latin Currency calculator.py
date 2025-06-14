@@ -22,7 +22,7 @@ total_usd = usd_from_cop + usd_from_pen + usd_from_brl
 
 print(f'$ {total_usd:.2f}')
 
-#Now we need to convert the leftover currency to us dollars
+#Now we need to convert the leftover currency to us dollarss
 
 usd_from_cop = cop_leftover * rate_cop_to_usd
 usd_from_pen = pen_leftover * rate_pen_to_usd
