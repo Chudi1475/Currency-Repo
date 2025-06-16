@@ -69,3 +69,8 @@ print(f"\nConversion performed on: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 # Saving to a file allows you to keep a record of your conversions for future reference.
 # The date and time stamp ensures you know exactly when the conversion was performed.
 # If you have suggestions for more features (like fetching live rates), you can expand this script further!
+# Small feature: Ask user if they want to clear the screen before exiting
+import os
+clear_screen = input("\nClear the screen before exiting? (y/n): ").strip().lower()
+if clear_screen == 'y':
+    os.system('cls' if os.name == 'nt' else 'clear')
