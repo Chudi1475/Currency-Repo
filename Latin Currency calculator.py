@@ -78,3 +78,6 @@ if clear_screen == 'y':
     print("Thank you for using the Latin Currency Calculator. Goodbye!")
     input("Press Enter to exit...")
     exit()
+
+# Add a feature to show the date and time of conversion
+from datetime import datetime
