@@ -58,4 +58,7 @@ if save == 'y':
 from datetime import datetime
 print(f"\nConversion performed on: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
 
+# The code above calculates the USD equivalent of leftover Latin American currencies.
+# It prints a breakdown table and optionally saves the results to a file.
+# The date and time of the conversion are also displayed for record-keeping.
 
