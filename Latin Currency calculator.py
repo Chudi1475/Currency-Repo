@@ -62,3 +62,10 @@ print(f"\nConversion performed on: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 # It prints a breakdown table and optionally saves the results to a file.
 # The date and time of the conversion are also displayed for record-keeping.
 
+# The code below is well-commented to help you understand each step.
+# If you want to add more currencies, simply follow the pattern for input, conversion, and table display.
+# You can also adjust the exchange rates at the top of your script for up-to-date values.
+# The breakdown table provides a clear summary of your leftover currency and their USD equivalents.
+# Saving to a file allows you to keep a record of your conversions for future reference.
+# The date and time stamp ensures you know exactly when the conversion was performed.
+# If you have suggestions for more features (like fetching live rates), you can expand this script further!
