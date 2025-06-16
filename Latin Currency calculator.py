@@ -31,3 +31,31 @@ print(f'USD from COP: ${usd_from_cop:.2f}')
 print(f'USD from PEN: ${usd_from_pen:.2f}')
 print(f'USD from BRL: ${usd_from_brl:.2f}')
 
+# Add a breakdown table for clarity
+print("\nBreakdown Table:")
+print("{:<20} {:<20} {:<20}".format("Currency", "Amount Leftover", "USD Equivalent"))
+print("{:<20} {:<20.2f} ${:<19.2f}".format("Colombian Pesos", cop_leftover, usd_from_cop))
+print("{:<20} {:<20.2f} ${:<19.2f}".format("Peruvian Soles", pen_leftover, usd_from_pen))
+print("{:<20} {:<20.2f} ${:<19.2f}".format("Brazilian Reais", brl_leftover, usd_from_brl))
+print("-" * 60)
+print("{:<20} {:<20} ${:<19.2f}".format("TOTAL", "", total_usd))
+
+# Add a feature to save the results to a file
+save = input("\nWould you like to save this breakdown to a file? (y/n): ").strip().lower()
+if save == 'y':
+    filename = input("Enter filename (e.g., results.txt): ").strip()
+    with open(filename, "w") as f:
+        f.write("Breakdown Table:\n")
+        f.write("{:<20} {:<20} {:<20}\n".format("Currency", "Amount Leftover", "USD Equivalent"))
+        f.write("{:<20} {:<20.2f} ${:<19.2f}\n".format("Colombian Pesos", cop_leftover, usd_from_cop))
+        f.write("{:<20} {:<20.2f} ${:<19.2f}\n".format("Peruvian Soles", pen_leftover, usd_from_pen))
+        f.write("{:<20} {:<20.2f} ${:<19.2f}\n".format("Brazilian Reais", brl_leftover, usd_from_brl))
+        f.write("-" * 60 + "\n")
+        f.write("{:<20} {:<20} ${:<19.2f}\n".format("TOTAL", "", total_usd))
+    print(f"Results saved to {filename}.")
+
+# Add a feature to show the date and time of conversion
+from datetime import datetime
+print(f"\nConversion performed on: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+
+
