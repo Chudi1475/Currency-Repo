@@ -74,3 +74,5 @@ import os
 clear_screen = input("\nClear the screen before exiting? (y/n): ").strip().lower()
 if clear_screen == 'y':
     os.system('cls' if os.name == 'nt' else 'clear')
+
+    print("Thank you for using the Latin Currency Calculator. Goodbye!")
