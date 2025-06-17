@@ -102,3 +102,8 @@ print(f"\nConversion performed on: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 # Add a feature to show the date and time of conversion
 from datetime import datetime
 print(f"\nConversion performed on: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}") 
+# The repeated blocks below display the date and time of the conversion.
+# Each block prints a timestamp to inform the user when the conversion was performed.
+# This is useful for record-keeping and tracking when each calculation was made.
+# If you only need the timestamp once, you can remove the duplicate lines.
+# This section is reserved for future enhancements or features.
