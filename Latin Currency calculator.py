@@ -100,7 +100,7 @@ from datetime import datetime
 print(f"\nConversion performed on: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
 #here is the code for the currency converterr
 
-# Add a feature to show the date and time of conversion
+# Add a feature to show the date and time of conversionn
 from datetime import datetime
 print(f"\nConversion performed on: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}") 
 # The repeated blocks below display the date and time of the conversion.
